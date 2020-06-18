@@ -11,18 +11,18 @@ public class HomeWork {
     //等腰三角形
     public static void triangle(){
         int i,j,k;
-        for (i=1;i<=6;i++){
-            for(j=1;j<=7-i;j++){
+        for (i=1;i<=6;i++){                     //i控制行
+            for(j=1;j<=7-i;j++){                //j控制空格输出
                 System.out.print(" ");
             }
-            for(k=1;k<=2*i-1;k++){
+            for(k=1;k<=2*i-1;k++){              //k控制*输出
                 System.out.print("*");
             }
             System.out.println();
         }
     }
     public static boolean findPrimeNum(int n){
-        for(int i = 2;i<=Math.sqrt(n);i++){
+        for(int i=2;i<=Math.sqrt(n);i++){
             if(n%i==0){
                 return false;
             }
